@@ -1,0 +1,9 @@
+name: manual work-flow dispatch
+on: workflow_dispatch
+
+jobs:
+ manual-dispatch:
+  runs-on: ubuntu-latest
+  steps:
+   - name: manual deployment
+     run: echo " its a manual process of triggering the pipeline" 
