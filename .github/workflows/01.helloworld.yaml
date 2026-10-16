@@ -1,4 +1,4 @@
-- name: Greeting the world
+  name: Greeting the world
   on: [push]
 
   jobs:
