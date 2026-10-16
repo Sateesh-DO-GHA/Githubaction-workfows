@@ -1,0 +1,24 @@
+name: inputs demo 
+on : workflow_dispatch
+inputs:
+  level:
+   description: "describe the level of logs"
+   required: true
+   default: 'warning'
+   type: choice
+   options: 
+    - info
+    - debug
+    - warning
+  tags:
+   description: " tags "  
+   type: boolean
+   required: true
+
+jobs:
+ print input:
+  runs-on: ubuntu-latest
+  steps:
+   - name: print input values
+     run: echo " level of the logs is ${inputs.level}"    
+     run: echo " given tag is ${inputs.tags}"  
