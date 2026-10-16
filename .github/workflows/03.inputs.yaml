@@ -3,18 +3,18 @@ on :
  workflow_dispatch:
   inputs:
    level:
-   description: "describe the level of logs"
-   required: true
-   default: 'warning'
-   type: choice
-   options: 
-    - info
-    - debug
-    - warning
-  tags:
-   description: " tags "  
-   type: boolean
-   required: true
+    description: "describe the level of logs"
+    required: true
+    default: 'warning'
+    type: choice
+    options: 
+     - info
+     - debug
+     - warning
+   tags:
+    description: " tags "  
+    type: boolean
+    required: true
 
 jobs:
  print input:
