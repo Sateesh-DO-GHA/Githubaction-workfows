@@ -21,5 +21,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: print input values
-     run: echo "level of the logs is ${inputs.level}"    
-     run: echo "given tag is ${inputs.tags}"  
+     run: 
+      echo "level of the logs is ${inputs.level}"    
+      echo "given tag is ${inputs.tags}"  
