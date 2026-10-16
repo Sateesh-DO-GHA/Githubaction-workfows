@@ -1,7 +1,8 @@
 name: inputs demo 
-on : workflow_dispatch
-inputs:
-  level:
+on : 
+ workflow_dispatch:
+  inputs:
+   level:
    description: "describe the level of logs"
    required: true
    default: 'warning'
