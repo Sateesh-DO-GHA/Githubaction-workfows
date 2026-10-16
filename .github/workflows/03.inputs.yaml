@@ -22,5 +22,5 @@ jobs:
   steps:
    - name: print input values
      run: 
-      echo "level of the logs is ${inputs.level}"    
-      echo "given tag is ${inputs.tags}"  
+      echo "level of the logs is ${{inputs.level}}"    
+      echo "given tag is ${{inputs.tags}}"  
