@@ -1,0 +1,11 @@
+name: hello-world-action
+on: workflow_dispatch
+
+jobs:
+ greeting:
+  runs-on: ubuntu-latest
+  steps:
+   - name: whom to greet
+     uses:  Sateesh-DO-GHA/Githubaction-workfows/.github/actions/helloworld-action@main
+     with:
+      whom-to-greet: "Sateesh kumar"
